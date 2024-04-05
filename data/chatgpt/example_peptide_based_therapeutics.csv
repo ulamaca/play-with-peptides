@@ -1,0 +1,18 @@
+name,sequence,what disease to cure,target(s),year-of-discovery,other notes
+Insulin,GIVEQCCTSICSLYQLENYCN,Diabetes,Insulin receptor,1921,First peptide hormone discovered
+Exenatide,HGEGTFTSDLSKQMEEEAVRLFIEWLKNGGPSSGAPPPS,Type 2 diabetes,GLP-1 receptor,1992,Derived from the saliva of the Gila monster
+Glucagon,HSQGTFTSDYSKYLDSRRAQDFVQWLMNT,Severe hypoglycemia,Glucagon receptor,1923,Used in emergency treatment of hypoglycemia
+Oxytocin,CYIQNCPLG,"Induction of labor, Control of postpartum bleeding",Oxytocin receptor,1953,"A hormone that acts on organs in the body and as a chemical messenger in the brain, controlling key aspects of the reproductive system."
+Vasopressin,CYFQNCPRG,"Diabetes insipidus, Esophageal varices bleeding",Vasopressin receptors,1951,Regulates water balance in the body and causes blood vessels to constrict.
+Octreotide,DFNWKLLPEN,"Acromegaly, Tumor symptoms in carcinoid syndrome",Somatostatin receptor,1979,"Mimics natural somatostatin pharmacologically, more potent inhibitor of growth hormone, glucagon, and insulin than the natural hormone."
+Ziconotide,N/A,Severe chronic pain,N-type calcium channels,1987,"First non-opioid medication for severe chronic pain, administered via intrathecal infusion."
+Leuprolide,Pyr-His-Trp-Ser-Tyr-D-Leu-Leu-Arg-Pro-NHEt,"Prostate cancer, Endometriosis, Uterine fibroids",GnRH receptor,1973,"Acts as a GnRH agonist, initially increasing and then significantly decreasing the release of gonadotropins and sex hormones."
+Eptifibatide,Mpr-Har-Gly-Asp-Trp-Pro-Cys-NH2,"Acute coronary syndrome, Percutaneous coronary intervention",Glycoprotein IIb/IIIa receptor,1991,An anticoagulant that inhibits platelet aggregation.
+Liraglutide,HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR,"Type 2 diabetes, Obesity",GLP-1 receptor,2009,"An analog of human glucagon-like peptide-1 (GLP-1), it enhances the secretion of insulin and suppresses the release of glucagon."
+Dulaglutide,Not specified (GLP-1 receptor agonist),Type 2 diabetes,GLP-1 receptor,2014,A long-acting GLP-1 receptor agonist that improves glycemic control in patients with type 2 diabetes.
+Semaglutide,Not specified (GLP-1 receptor agonist),"Type 2 diabetes, Obesity",GLP-1 receptor,2017,Another GLP-1 receptor agonist that can be used for the treatment of type 2 diabetes and as an aid in weight loss for adults with obesity.
+Bortezomib,Not specified (Boronated peptide),"Multiple myeloma, Mantle cell lymphoma",Proteasome,2003,A proteasome inhibitor that disrupts cell cycle control and induces apoptosis in cancer cells.
+Goserelin,Not specified (Synthetic decapeptide),"Prostate cancer, Breast cancer",GnRH receptor,1980s,"Similar to Leuprolide, used to treat hormone-sensitive cancers of the prostate and breast by inhibiting sex hormone production."
+Carbetocin,Not specified (Oxytocin analog),Autism spectrum disorders (ASD) (research phase),Oxytocin receptor,2010s,An analog of oxytocin being researched for potential to improve social functioning in individuals with ASD.
+Selank,Thr-Lys-Pro-Arg-Pro-Gly-Pro,"Anxiety, Depression (used in some countries)",Unknown; believed to modulate BDNF and other systems,2000s,"A synthetic peptide with anxiolytic properties, used in some countries."
+Semax,Met-Glu-His-Phe-Pro-Gly-Pro,"Cognitive disorders, ADHD, Stroke recovery (research phase or used in some countries)",Unknown; appears to have neuroprotective and cognitive-enhancing effects,1980s-1990s,Studied for potential in improving cognitive function and neuroprotection.
