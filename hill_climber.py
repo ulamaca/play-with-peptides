@@ -32,7 +32,7 @@ if __name__ == "__main__":
     n_step = 50
     n_population = 20 # real poputation size = n_population * (1.3) + 1
     # mutate_rate = 0.5
-    cross_over_rate = 0.3
+    cross_over_rate = 0.8
     random.seed(42)
 
     seed_seq = 'TKPRPGP' # peptide: Selank
@@ -57,13 +57,13 @@ if __name__ == "__main__":
         population = [legalize_seq_for_clf(mutator.mutate(best_step)) for _ in range(n_population-1)] + [best_step] 
 
         # cross over
-        to_mate = random.sample(population, int(n_population*cross_over_rate)*2)
-        mates = [(to_mate[i], to_mate[i+1]) for i in range(0, len(to_mate), 2)]
+        mates = [random.sample(population, 2) for _ in range(int(n_population*cross_over_rate))]
         offsprings = [naive_cross_over(parent[0], parent[1]) for parent in mates]
         offsprings = [legalize_seq_for_clf(c) for c in offsprings]
-        population.extend(offsprings)        
+        population.extend(offsprings)    
+        population = list(set(population) ) # make them unique()
 
-        print(f"step={step}, score={score}, current seed peptide: {best_step}")    
+        print(f"step={step}, score={score}, current population size= {len(population)}, current seed peptide: {best_step}")    
 
         
     df = pd.concat(generations).reset_index(drop=True)
