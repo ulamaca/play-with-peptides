@@ -5,7 +5,7 @@
 import pandas as pd
 import random
 from manipulate.mutate import Genetic_Mutations
-from manipulate.cross_over import naive_cross_over
+from manipulate.cross_over import naive_cross_over, inverted_cross_over
 from mlpep.actv_scorer import load_model, get_pred_result
 
 def legalize_seq_for_clf(seq: str):
@@ -33,6 +33,7 @@ if __name__ == "__main__":
     n_population = 20 # real poputation size = n_population * (1.3) + 1
     # mutate_rate = 0.5
     cross_over_rate = 0.8
+    cross_over_type = 'icv'
     random.seed(42)
 
     seed_seq = 'TKPRPGP' # peptide: Selank
@@ -58,7 +59,10 @@ if __name__ == "__main__":
 
         # cross over
         mates = [random.sample(population, 2) for _ in range(int(n_population*cross_over_rate))]
-        offsprings = [naive_cross_over(parent[0], parent[1]) for parent in mates]
+        if cross_over_type == 'icv':
+            offsprings = [inverted_cross_over(parent[0], parent[1]) for parent in mates]
+        elif cross_over_type == 'naive':
+            offsprings = [naive_cross_over(parent[0], parent[1]) for parent in mates]
         offsprings = [legalize_seq_for_clf(c) for c in offsprings]
         population.extend(offsprings)    
         population = list(set(population) ) # make them unique()
